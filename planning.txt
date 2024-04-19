@@ -1,0 +1,30 @@
+# 1. add data 
+# 2. retrive data with id 
+# 3. update data 
+#       1. id , new data. 
+#       2. id , column name , column value. 
+# 4. show all data 
+
+DELETE DATA BY ID 
+
+
+
+pd.set_option('display.max_colwidth', None)  # To display full column contents
+pd.set_option('display.expand_frame_repr', False)  # To display DataFrame without line wrapping
+column_widths = {
+    'id': 5,
+    'cname': 10,
+    'oname': 10,
+    'date': 12,
+    'q': 5
+}
+
+
+
+
+
+time_object = datetime.datetime.strptime(readable_time, "%I:%M %p").time()
+
+# Perform actions on the time object
+hour = time_object.hour
+minutes = time_object.minute
